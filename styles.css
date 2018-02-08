@@ -1,11 +1,13 @@
-table {
+table, #btnSet, div {
     width: 70%;
     margin:auto;
     margin-top: 40px;
+    text-align: center;
 }
 
 .qRow {
     margin-top: 30px;
+    font-size: 22px;
 }
 
 tr {
@@ -17,4 +19,12 @@ tr {
     margin:auto;
     text-align: center;
     margin-top: 40px;
+}
+
+.edgeCell {
+    width: 25%;
+}
+
+button {
+    margin: 5px;
 }
