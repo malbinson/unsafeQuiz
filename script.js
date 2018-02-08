@@ -5,4 +5,5 @@ function createQuestions() {
     child.setAttribute("type", "radio");
     parent.appendChild(child);
 
+
 }
