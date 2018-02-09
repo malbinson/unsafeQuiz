@@ -9,17 +9,39 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css"/>
 </head>
-<body onload="createQuestions()">
+<body onload="onLoad()">
 
 <div id="title"></div>
 
-<div id="qSet0"></div>
-<div id="qSet1"></div>
-<div id="qSet2"></div>
-<div id="qSet3"></div>
+<div id="intro">
+    <p>Looking for more effective ways to face change at work and in your life? Want to
+    help your team be more creative when the stakes are high and time is tight?</p>
 
-<div id="btnSet"></div>
+    <p>This five-minute quiz will reveal what you can do more of and what you should
+    stop doing when it comes to breaking out of the safe thinking habits that most
+    commonly hold us back.</p>
 
+    <p>The diagnostic distills decades of research into the science of creativity and
+    performance as well as more than 100 interviews I conducted with
+    breakthrough unsafe thinkers. There are no right or wrong answers to the
+    following questions. We all think in a mix of safe and unsafe ways and thus all
+    have room to grow our ability to boldly face change.</p>
+
+    <p><button onclick="createQuestions()" class="btn btn-success">Get Started</button>
+
+</div>
+
+<div id="topContainer">
+
+
+    <div id="qSet0"></div>
+    <div id="qSet1"></div>
+    <div id="qSet2"></div>
+    <div id="qSet3"></div>
+
+    <div id="btnSet"></div>
+
+</div>
 
 </body>
 </html>

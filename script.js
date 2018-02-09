@@ -1,15 +1,21 @@
 
 var numPages = allQuestions.length - 1;
-var questionsPerPage = 4;
+var questionsPerPage = 6;
 var totalQuestions = numPages * questionsPerPage;
 
 var numCells = 8;
 var numRadioCells = 6;
 var page = 0;
 
+function onLoad() {
+    document.getElementById("title").innerHTML = "<img src='img/header.png'>";
+    document.getElementById("topContainer").style.display = "none";
+}
+
 function createQuestions() {
 
-    document.getElementById("title").innerHTML = "<h1>Jonah's Quiztacular Spectacular</h1>";
+    document.getElementById("intro").style.display = "none";
+    document.getElementById("topContainer").style.display = "inline";
 
     for(var g=0;g<=numPages;g++) {
 
@@ -47,6 +53,13 @@ function createQuestions() {
                 radioCells[s].setAttribute("type","radio");
                 radioCells[s].setAttribute("name","q"+g+i);
                 radioCells[s].setAttribute("value",s+1);
+
+                //DEV
+                if(s==5){
+                    radioCells[s].setAttribute("checked","checked");
+                }
+                //DEV
+
             }
 
             cells[1].appendChild(radioCells[0]);
