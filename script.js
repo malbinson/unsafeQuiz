@@ -3,8 +3,8 @@ var numPages = allQuestions.length - 1;
 var questionsPerPage = 6;
 var totalQuestions = numPages * questionsPerPage;
 
-var numCells = 8;
-var numRadioCells = 6;
+var numCells = 3;
+var numRadioCells = 1;
 var page = 0;
 
 function onLoad() {
@@ -30,7 +30,7 @@ function createQuestions() {
             var radioCells = [];
             var qRow = document.createElement("tr");
             var qCell = document.createElement("td");
-            qCell.setAttribute("colspan",8);
+            qCell.setAttribute("colspan",3);
             qCell.setAttribute("class","qTd");
 
             qTable.appendChild(qRow);
@@ -47,14 +47,16 @@ function createQuestions() {
 
             cells[0].setAttribute("class","edgeCell");
             cells[0].innerHTML = "Strongly Disagree";
-            cells[7].setAttribute("class","edgeCell");
-            cells[7].innerHTML = "Strongly Agree";
-
+            cells[2].setAttribute("class","edgeCell");
+            cells[2].innerHTML = "Strongly Agree";
+//here
             for(var s=0; s<numRadioCells;s++) {
                 radioCells.push(document.createElement("input"));
                 radioCells[s].setAttribute("type","range");
                 radioCells[s].setAttribute("name","q"+g+i);
-                radioCells[s].setAttribute("value",s+1);
+                radioCells[s].setAttribute("min",1);
+                radioCells[s].setAttribute("max",50);
+                radioCells[s].setAttribute("style","width:300px;");
 
                 //DEV
                 if(s==5){
@@ -65,11 +67,11 @@ function createQuestions() {
             }
 
             cells[1].appendChild(radioCells[0]);
-            cells[2].appendChild(radioCells[1]);
-            cells[3].appendChild(radioCells[2]);
-            cells[4].appendChild(radioCells[3]);
-            cells[5].appendChild(radioCells[4]);
-            cells[6].appendChild(radioCells[5]);
+            // cells[2].appendChild(radioCells[1]);
+            // cells[3].appendChild(radioCells[2]);
+            // cells[4].appendChild(radioCells[3]);
+            // cells[5].appendChild(radioCells[4]);
+            // cells[6].appendChild(radioCells[5]);
 
             for(var d=0;d<numCells;d++) {
                 aRow.appendChild(cells[d]);
