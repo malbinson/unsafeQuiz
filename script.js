@@ -10,6 +10,7 @@ var page = 0;
 function onLoad() {
     document.getElementById("title").innerHTML = "<img src='img/header.png'>";
     document.getElementById("topContainer").style.display = "none";
+    document.getElementById("results").style.display = "none";
 }
 
 function createQuestions() {
@@ -90,6 +91,7 @@ function incrementPage(prevOrNext) {
     }
     populateButtons();
     determinePage();
+    scrollTop();
 }
 
 function determinePage() {
@@ -121,7 +123,9 @@ function populateButtons() {
     next.setAttribute("class","btn btn-primary");
 
     submit.setAttribute("onclick","processInput()");
-    submit.setAttribute("class","btn btn-success");
+    submit.setAttribute("class","btn btn-primary");
+
+
 
     if(page != 0){
         btnDiv.appendChild(prev);
@@ -132,4 +136,19 @@ function populateButtons() {
     if(page == numPages) {
         btnDiv.appendChild(submit);
     }
+
+    var progress = document.getElementById("progress")
+    if(page==0) {
+        progress.innerHTML = "<img src='img/p3.png'>";
+    }
+    if(page==1) {
+        progress.innerHTML = "<img src='img/p2.png'>";
+    }
+    if(page==2) {
+        progress.innerHTML = "<img src='img/p1.png'>";
+    }
+}
+
+function scrollTop() {
+    document.getElementById("title").scrollIntoView();
 }

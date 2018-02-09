@@ -1,4 +1,5 @@
 function processInput() {
+    scrollTop();
     var answerArray = [];
     for(var y=0; y<=numPages;y++) {
 
@@ -49,11 +50,14 @@ function computeResults(arr) {
 function displayResults(explore,science,courage) {
 
 
-    document.getElementById("topContainer").innerHTML =
-        "Explorer" + explore + "<br>" +
-        "Scientific" + science+ "<br>" +
-        "Courageous" + courage+ "<br>";
+    document.getElementById("topContainer").style.display = "none";
 
+    document.getElementById("explore").innerHTML = explore;
+    document.getElementById("science").innerHTML = science;
+    document.getElementById("courage").innerHTML = courage;
+
+
+    document.getElementById("results").style.display = "block";
 
 }
 
