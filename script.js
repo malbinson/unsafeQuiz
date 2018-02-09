@@ -31,6 +31,7 @@ function createQuestions() {
             var qRow = document.createElement("tr");
             var qCell = document.createElement("td");
             qCell.setAttribute("colspan",8);
+            qCell.setAttribute("class","qTd");
 
             qTable.appendChild(qRow);
             qRow.appendChild(qCell);
@@ -51,7 +52,7 @@ function createQuestions() {
 
             for(var s=0; s<numRadioCells;s++) {
                 radioCells.push(document.createElement("input"));
-                radioCells[s].setAttribute("type","radio");
+                radioCells[s].setAttribute("type","range");
                 radioCells[s].setAttribute("name","q"+g+i);
                 radioCells[s].setAttribute("value",s+1);
 
