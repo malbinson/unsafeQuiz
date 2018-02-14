@@ -5,6 +5,25 @@ table, #btnSet, div {
     text-align: center;
 }
 
+#bookDisplay {
+    width: 90%;
+}
+
+#bookTable {
+    margin-top: 0px;
+    width: 70%;
+}
+
+
+#finalTable td {
+    padding: 0px;
+}
+
+#bookTable td {
+    padding: 0px 15px;
+    font-size: 10pt;
+}
+
 hr {
     margin: 50px 0px;
 }
@@ -50,7 +69,6 @@ button {
 }
 
 h3 {
-    background: yellow;
     font-size: 20px;
 }
 

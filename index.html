@@ -11,6 +11,15 @@
 </head>
 <body onload="onLoad()">
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div id="title"></div>
 
 <div id="intro">
@@ -27,8 +36,18 @@
     following questions. We all think in a mix of safe and unsafe ways and thus all
     have room to grow our ability to boldly face change.</p>
 
-    <p align="center"><button onclick="createQuestions()" class="btn btn-primary">Get Started</button>
+    <p align="center"><button onclick="createQuestions()" class="btn btn-primary">Get Started</button></p>
+    <div align="center" id="bookDisplay">
 
+        <table id="bookTable">
+            <tr>
+                <td><b>Want the book?</b><br><i>Unsafe Thinking: How to be Nimble and Bold When You Need it Most.</i>
+                    <br><a href="https://www.amazon.com/Unsafe-Thinking-Nimble-Bold-When/dp/0738220140/ref=sr_1_1">Pre-Order Here</a></td>
+                <td><a href="https://www.amazon.com/Unsafe-Thinking-Nimble-Bold-When/dp/0738220140/ref=sr_1_1"><img src="img/unsafeThinking.png" width="130"></a></td>
+            </tr>
+        </table>
+
+    </div>
 </div>
 
 <div id="topContainer">
@@ -46,7 +65,7 @@
 <div id="results">
     <img src="img/explorer.png">
     <h2>EXPLORER’S MINDSET</h2>
-    <p><h3>Your Explorer’s Mindset Score: <span id="explore"></span></h3></p>
+    <p><h3 id="ex">Your Explorer’s Mindset Score: <span id="explore"></span></h3></p>
     <p class="descText">Self-identified “experts” like to dwell on what they know.
     Explorers often have just as much knowledge but they are
     driven more by curiosity about what they don’t yet know.
@@ -62,7 +81,7 @@
 
     <img src="img/scientific.png">
     <h2>SCIENTIFIC MINDSET</h2>
-    <p><h3>Your Scientific Mindset Score: <span id="science"></span></h3></p>
+    <p><h3 id="sc">Your Scientific Mindset Score: <span id="science"></span></h3></p>
     <p class="descText">Those with a Scientific Mindset are always thinking
     critically about their own thinking. To be human is to have a
     host of automatic thoughts and biases — we can’t help it.
@@ -80,7 +99,7 @@
 
     <img src="img/courageous.png">
     <h2>COURAGEOUS MINDSET</h2>
-    <p><h3>Your Courageous  Mindset Score: <span id="courage"></span></h3></p>
+    <p><h3 id="co">Your Courageous  Mindset Score: <span id="courage"></span></h3></p>
     <p class="descText">People with a Courageous Mindset think counterintuitively
     about change. Instead of seeing anxiety as something to be
     avoided, it allows them to see fear as a sign they’re on their
@@ -91,6 +110,28 @@
     always be followed, the Courageous Mindset allows one to
     engage in “intelligent disobedience” from which
     breakthroughs so often emerge.</p>
+
+    <hr>
+
+    <table id="finalTable">
+        <tr>
+            <td width="50%">
+
+                <span class="fb-share-button" data-href="http://www.jonahsachs.com/" data-layout="button" data-size="large" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.jonahsachs.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></span>
+
+
+            </td>
+            <td>
+
+                <a target="new" href="https://twitter.com/intent/tweet?source=webclient&text=its%20malbinson"><img src="img/tweet.png" height="28px"></a>
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><br><br><button onclick="location.reload()" class="btn btn-primary">Start Over</button><br><br><br></td>
+        </tr>
+    </table>
+
 
 </div>
 

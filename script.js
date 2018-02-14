@@ -10,6 +10,7 @@ var page = 0;
 function onLoad() {
     document.getElementById("title").innerHTML = "<img src='img/header.png'>";
     document.getElementById("topContainer").style.display = "none";
+    document.getElementById("intro").style.display = "block";
     document.getElementById("results").style.display = "none";
 }
 
@@ -53,9 +54,9 @@ function createQuestions() {
             for(var s=0; s<numRadioCells;s++) {
                 radioCells.push(document.createElement("input"));
                 radioCells[s].setAttribute("type","range");
-                radioCells[s].setAttribute("name","q"+g+i);
+                radioCells[s].setAttribute("id","q"+g+i);
                 radioCells[s].setAttribute("min",1);
-                radioCells[s].setAttribute("max",50);
+                radioCells[s].setAttribute("max",6);
                 radioCells[s].setAttribute("style","width:300px;");
 
                 //DEV
@@ -67,11 +68,6 @@ function createQuestions() {
             }
 
             cells[1].appendChild(radioCells[0]);
-            // cells[2].appendChild(radioCells[1]);
-            // cells[3].appendChild(radioCells[2]);
-            // cells[4].appendChild(radioCells[3]);
-            // cells[5].appendChild(radioCells[4]);
-            // cells[6].appendChild(radioCells[5]);
 
             for(var d=0;d<numCells;d++) {
                 aRow.appendChild(cells[d]);
