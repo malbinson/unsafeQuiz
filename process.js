@@ -28,13 +28,6 @@ function computeResults(arr) {
     var scienceFinal = Math.round((science+ 40) * 1.73);
     var courageFinal = Math.round((courage + 40) * 1.73);
 
-    console.log("explore:" + exploreFinal);
-    console.log("science:" + scienceFinal);
-    console.log("courage:" + courageFinal);
-
-    //document.getElementById("topContainer").innerHTML = "<img src='img/spin.gif'>";
-    //setTimeout(displayResults(), 2000);
-
     displayResults(exploreFinal,scienceFinal,courageFinal);
 
 }
@@ -54,6 +47,19 @@ function displayResults(explore,science,courage) {
     colorByScore("ex",explore);
     colorByScore("sc",science);
     colorByScore("co",courage);
+
+    var largest = Math.max(explore,science,courage);
+
+    if(largest == explore) {
+        document.getElementById("tweetLink").href = "https://twitter.com/intent/tweet?source=webclient&text=I%20just%20found%20out%20my%20strongest%20thinking%20is%20as%20an%20Explorer%20on%20this%20Unsafe%20Thinking%20quiz.%20http://www.jonahsachs.com/diagnostic%20%23unsafethinking"
+    }
+    if(largest == science) {
+        document.getElementById("tweetLink").href = "https://twitter.com/intent/tweet?source=webclient&text=I%20just%20found%20out%20my%20strongest%20thinking%20comes%20from%20being%20Courageous%20on%20this%20Unsafe%20Thinking%20quiz.%20http://www.jonahsachs.com/diagnostic%20%23unsafethinking"
+    }
+    if(largest == courage) {
+        document.getElementById("tweetLink").href = "https://twitter.com/intent/tweet?source=webclient&text=I%20just%20found%20out%20my%20strongest%20thinking%20comes%20from%20having%20a%20Scientific%20mindset%20on%20this%20Unsafe%20Thinking%20quiz.%20http://www.jonahsachs.com/diagnostic%20%23unsafethinking"
+    }
+
 
 }
 
