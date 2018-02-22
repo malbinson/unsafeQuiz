@@ -8,6 +8,11 @@ var numRadioCells = 1;
 var page = 0;
 
 function onLoad() {
+
+    if (screen.width <= 950) {
+        window.location = "https://malbinson.github.io/unsafeQuiz/index.html";
+    }
+
     document.getElementById("title").innerHTML = "<img src='img/header.png'>";
     document.getElementById("topContainer").style.display = "none";
     document.getElementById("intro").style.display = "block";
@@ -115,14 +120,14 @@ function populateButtons() {
 
     prev.setAttribute("value","prev");
     prev.setAttribute("onclick","incrementPage(this)");
-    prev.setAttribute("class","btn btn-primary");
+    prev.setAttribute("class","btn btn-primary btn-lg");
 
     next.setAttribute("value","next");
     next.setAttribute("onclick","incrementPage(this)");
-    next.setAttribute("class","btn btn-primary");
+    next.setAttribute("class","btn btn-primary btn-lg");
 
     submit.setAttribute("onclick","processInput()");
-    submit.setAttribute("class","btn btn-primary");
+    submit.setAttribute("class","btn btn-primary btn-lg");
 
 
 
