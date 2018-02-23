@@ -9,10 +9,6 @@ var page = 0;
 
 function onLoad() {
 
-    if (screen.width <= 950 && window.parent.location.href == "http://www.jonahsachs.com/diagnostic") {
-        window.parent.location = "https://malbinson.github.io/unsafeQuiz/index.html";
-    }
-
     document.getElementById("title").innerHTML = "<img src='img/header.png'>";
     document.getElementById("topContainer").style.display = "none";
     document.getElementById("intro").style.display = "block";
