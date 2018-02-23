@@ -9,7 +9,7 @@ var page = 0;
 
 function onLoad() {
 
-    if (screen.width <= 950 && window.parent.location.host != "malbinson.github.io") {
+    if (screen.width <= 950 && window.parent.location.href == "http://www.jonahsachs.com/diagnostic") {
         window.parent.location = "https://malbinson.github.io/unsafeQuiz/index.html";
     }
 
