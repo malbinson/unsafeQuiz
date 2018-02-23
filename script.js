@@ -9,7 +9,7 @@ var page = 0;
 
 function onLoad() {
 
-    if (screen.width <= 950 && window.location.host != "malbinson.github.io") {
+    if (screen.width <= 950 && window.parent.location.host != "malbinson.github.io") {
         window.parent.location = "https://malbinson.github.io/unsafeQuiz/index.html";
     }
 
