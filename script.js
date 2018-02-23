@@ -10,7 +10,7 @@ var page = 0;
 function onLoad() {
 
     if (screen.width <= 950) {
-        window.location = "https://malbinson.github.io/unsafeQuiz/index.html";
+        window.parent.location = "https://malbinson.github.io/unsafeQuiz/index.html";
     }
 
     document.getElementById("title").innerHTML = "<img src='img/header.png'>";
