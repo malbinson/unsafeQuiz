@@ -13,7 +13,7 @@ table, #btnSet, div {
     text-align: center;
 }
 
-#qTable {
+#qTable, #results {
     max-width: 700px;
 }
 
@@ -26,6 +26,13 @@ table, #btnSet, div {
     width: 70%;
 }
 
+.wideTable {
+    width: 90%;
+}
+
+.wideTable td {
+    padding: 8px;
+}
 
 #finalTable td {
     padding: 0px;
