@@ -1,8 +1,20 @@
+body {
+    font-size: 2vh;
+    line-height:1.2;
+}
+
+html{font-size:110%;}
+@media(min-width:60em){html{font-size: 90%}}
+
 table, #btnSet, div {
     width: 70%;
     margin:auto;
     margin-top: 40px;
     text-align: center;
+}
+
+#qTable {
+    max-width: 700px;
 }
 
 #bookDisplay {
@@ -21,7 +33,7 @@ table, #btnSet, div {
 
 #bookTable td {
     padding: 0px 15px;
-    font-size: 10pt;
+    font-size: 90%;
 }
 
 hr {
@@ -30,10 +42,11 @@ hr {
 
 #intro {
     text-align: left;
+    max-width: 700px;
 }
 
 .qRow {
-    font-size: 22px;
+    font-size: 150%;
 }
 
 .qDataCell {
@@ -42,6 +55,10 @@ hr {
 
 .descText {
     text-align: left;
+}
+
+.topText {
+    font-size: 125%;
 }
 
 tr {
@@ -69,7 +86,7 @@ button {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 125%;
 }
 
 

@@ -51,16 +51,23 @@ function displayResults(explore,science,courage) {
     var largest = Math.max(explore,science,courage);
 
     if(largest == explore) {
-        document.getElementById("tweetLink").href = "https://twitter.com/intent/tweet?source=webclient&text=I%20just%20found%20out%20my%20strongest%20thinking%20is%20as%20an%20Explorer%20on%20this%20Unsafe%20Thinking%20quiz.%20http://www.jonahsachs.com/diagnostic%20%23unsafethinking"
-    }
-    if(largest == science) {
-        document.getElementById("tweetLink").href = "https://twitter.com/intent/tweet?source=webclient&text=I%20just%20found%20out%20my%20strongest%20thinking%20comes%20from%20being%20Courageous%20on%20this%20Unsafe%20Thinking%20quiz.%20http://www.jonahsachs.com/diagnostic%20%23unsafethinking"
+        href= "https://twitter.com/intent/tweet?source=webclient&text=I%20just%20found%20out%20my%20strongest%20thinking%20is%20as%20an%20Explorer%20on%20this%20Unsafe%20Thinking%20quiz.%20http://www.jonahsachs.com/diagnostic%20%23unsafethinking"
     }
     if(largest == courage) {
-        document.getElementById("tweetLink").href = "https://twitter.com/intent/tweet?source=webclient&text=I%20just%20found%20out%20my%20strongest%20thinking%20comes%20from%20having%20a%20Scientific%20mindset%20on%20this%20Unsafe%20Thinking%20quiz.%20http://www.jonahsachs.com/diagnostic%20%23unsafethinking"
+        href = "https://twitter.com/intent/tweet?source=webclient&text=I%20just%20found%20out%20my%20strongest%20thinking%20comes%20from%20being%20Courageous%20on%20this%20Unsafe%20Thinking%20quiz.%20http://www.jonahsachs.com/diagnostic%20%23unsafethinking"
+    }
+    if(largest == science) {
+        href = "https://twitter.com/intent/tweet?source=webclient&text=I%20just%20found%20out%20my%20strongest%20thinking%20comes%20from%20having%20a%20Scientific%20mindset%20on%20this%20Unsafe%20Thinking%20quiz.%20http://www.jonahsachs.com/diagnostic%20%23unsafethinking"
     }
 
 
+}
+
+function openTwitter() {
+    window.open(href,
+        'newwindow',
+        'width=400,height=250');
+    return false;
 }
 
 function colorByScore(elem,score) {
