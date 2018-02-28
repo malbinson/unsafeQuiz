@@ -13,7 +13,7 @@ var qSet1 = [
     "<br>I speak up often when I disagree with people.",
     "<hr><br>I think it’s important to follow rules unless it’s absolutely necessary to break them.",
     "<hr><br>I like to wrestle with ideas that don’t entirely add up or make sense.",
-    "<hr><br>On important matters, it’s important to have an opinion and share it.",
+    "<hr><br>On important matters, I value having a strong opinion.",
     "<hr><br>I tend to listen more than I speak.",
     "<hr><br>I get embarrassed or upset when it turns out I’ve been wrong. "
 
