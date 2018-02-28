@@ -173,7 +173,7 @@ input[type=range]::-moz-range-thumb {
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     border: 1px solid #000000;
     height: 50px;
-    width: 30px;
+    width: 40px;
     border-radius: 3px;
     background: #ffffff;
     cursor: pointer;
@@ -184,7 +184,7 @@ input[type=range]::-ms-thumb {
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     border: 1px solid #000000;
     height: 50px;
-    width: 30px;
+    width: 40px;
     border-radius: 3px;
     background: #ffffff;
     cursor: pointer;
@@ -192,7 +192,7 @@ input[type=range]::-ms-thumb {
 
 input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
-    height: 8.4px;
+    height: 20px;
     cursor: pointer;
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     background: #FFD700;
@@ -206,7 +206,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 input[type=range]::-moz-range-track {
     width: 100%;
-    height: 8.4px;
+    height: 20px;
     cursor: pointer;
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     background: #FFD700;
@@ -216,7 +216,7 @@ input[type=range]::-moz-range-track {
 
 input[type=range]::-ms-track {
     width: 100%;
-    height: 8.4px;
+    height: 20px;
     cursor: pointer;
     background: transparent;
     border-color: transparent;
@@ -252,7 +252,7 @@ input[type=range]:focus {
 }
 input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
-    height: 8.4px;
+    height: 20px;
     cursor: pointer;
     animate: 0.2s;
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
@@ -264,7 +264,7 @@ input[type=range]::-webkit-slider-thumb {
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     border: 1px solid #000000;
     height: 50px;
-    width: 30px;
+    width: 40px;
     border-radius: 3px;
     background: #ffffff;
     cursor: pointer;
@@ -276,7 +276,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 input[type=range]::-moz-range-track {
     width: 100%;
-    height: 8.4px;
+    height: 20px;
     cursor: pointer;
     animate: 0.2s;
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
@@ -288,14 +288,14 @@ input[type=range]::-moz-range-thumb {
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     border: 1px solid #000000;
     height: 50px;
-    width: 30px;
+    width: 40px;
     border-radius: 3px;
     background: #ffffff;
     cursor: pointer;
 }
 input[type=range]::-ms-track {
     width: 100%;
-    height: 8.4px;
+    height: 20px;
     cursor: pointer;
     animate: 0.2s;
     background: transparent;
@@ -319,7 +319,7 @@ input[type=range]::-ms-thumb {
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     border: 1px solid #000000;
     height: 50px;
-    width: 30px;
+    width: 40px;
     border-radius: 3px;
     background: #ffffff;
     cursor: pointer;
