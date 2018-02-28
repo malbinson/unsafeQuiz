@@ -192,7 +192,7 @@ input[type=range]::-ms-thumb {
 
 input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
-    height: 20px;
+    height: 25px;
     cursor: pointer;
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     background: #FFD700;
@@ -206,7 +206,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 input[type=range]::-moz-range-track {
     width: 100%;
-    height: 20px;
+    height: 25px;
     cursor: pointer;
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     background: #FFD700;
@@ -216,7 +216,7 @@ input[type=range]::-moz-range-track {
 
 input[type=range]::-ms-track {
     width: 100%;
-    height: 20px;
+    height: 25px;
     cursor: pointer;
     background: transparent;
     border-color: transparent;
@@ -252,7 +252,7 @@ input[type=range]:focus {
 }
 input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
-    height: 20px;
+    height: 25px;
     cursor: pointer;
     animate: 0.2s;
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
@@ -276,7 +276,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 input[type=range]::-moz-range-track {
     width: 100%;
-    height: 20px;
+    height: 25px;
     cursor: pointer;
     animate: 0.2s;
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
@@ -295,7 +295,7 @@ input[type=range]::-moz-range-thumb {
 }
 input[type=range]::-ms-track {
     width: 100%;
-    height: 20px;
+    height: 25px;
     cursor: pointer;
     animate: 0.2s;
     background: transparent;
