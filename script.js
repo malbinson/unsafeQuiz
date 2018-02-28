@@ -139,13 +139,13 @@ function populateButtons() {
 
     var progress = document.getElementById("progress")
     if(page==0) {
-        progress.innerHTML = "<img src='img/set3.png'>";
+        progress.innerHTML = "<img src='img/set1.png'>";
     }
     if(page==1) {
         progress.innerHTML = "<img src='img/set2.png'>";
     }
     if(page==2) {
-        progress.innerHTML = "<img src='img/set1.png'>";
+        progress.innerHTML = "<img src='img/set3.png'>";
     }
 }
 
