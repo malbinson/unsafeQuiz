@@ -51,7 +51,7 @@ function createQuestions() {
             cells[0].innerHTML = "Strongly Disagree";
             cells[2].setAttribute("class","edgeCell");
             cells[2].innerHTML = "Strongly Agree";
-//here
+
             for(var s=0; s<numRadioCells;s++) {
                 radioCells.push(document.createElement("input"));
                 radioCells[s].setAttribute("type","range");
